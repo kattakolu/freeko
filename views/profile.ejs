@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="../stylesheets/profile.css">
+<% include ./partials/header.ejs %>
+<div class="flex container mt-5 pt-4 pb-4">
+    <div id="left">
+        <div class="profilePicFrame">
+            <div id="profilePic">
+                <img class="prflpic"
+                    src="https://images.unsplash.com/photo-1521117660421-ce701ed42966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                    alt="">
+            </div>
+        </div>
+        <div class="details p-2 pl-3 pr-3">
+            <h4>Gaurvi Chouhan</h4>
+            <h6 class="lead">Designer & Developer</h6>
+            <p class="lead mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quaerat reiciendis
+                nisi rem neque sint error optio a libero molestiae.</p>
+            <div class="icns flexy">
+                <span title="Call Now" class="icon"><i class="fa fa-phone"></i></span>
+                <span title="Buzz Them" class="icon ml-3"><i class="fa fa-bell"></i></span>
+                <span title="Say Anonymously" class="icon ml-3"><i class="fa fa-comment"></i></span>
+            </div>
+            <form class="mt-4" action="#" method="POST">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">What's your current thought ?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Write your thought here..."></textarea>
+                    <a href="#" class="btn btn-primary mt-2">Post It</a>
+                </div>
+            </form>
+            <hr>
+            <div class="prevPost mt-4">
+                <h4>Previous Posts</h4>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facilis atque exercitationem
+                    magni?</small>
+                <div class="posts mt-4">
+                    <div class="post">
+                        <div class="postTop">
+                            <div class="usrPrfl">
+                                <img class="prflpic"
+                                    src="https://images.unsplash.com/photo-1521117660421-ce701ed42966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                                    alt="">
+                            </div>
+                            <div class="postDetails">
+                                <h6>Gaurvi Chouhan</h6>
+                                <small>Bhopal, India</small>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, expedita est exercitationem,
+                            rem magni
+                            veritatis ullam illo rerum officiis suscipit harum ipsa culpa. Pariatur laudantium non,
+                            velit labore
+                            fuga accusamus?</p>
+                        <small>12 Likes, 12 Love Reactions</small>
+                        <div class="options">
+                            <span title="Like" class="icon"><i class="fa fa-heart"></i></span>
+                            <span title="Like" class="icon"><i class="fa fa-thumbs-up"></i></span>
+                            <span title="Like" class="icon"><i class="fa fa-thumbs-down"></i></span>
+                        </div>
+                    </div>
+                    <p class="text-center"><small>No More Posts Left</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

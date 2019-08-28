@@ -1,0 +1,50 @@
+<% include ./partials/header.ejs %>
+
+<div class="container pt-3 pb-3 mt-5">
+    <h4 class="display-5">Already have an account ?</h4>
+    <a class="btn btn-primary mt-3" href="/login">Log In Now</a>
+    <hr>
+    <h3 class="display-5">Register Now</h3>
+    <form id="regForm" method="POST" action="#">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputname">Name</label>
+                <input type="text" class="form-control" id="inputname" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputusername">Username</label>
+                <input type="text" class="form-control" id="inputusername" placeholder="Username">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Something About You 🎭</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What you're good at, ambitions, about you..."></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Gender</label>
+                <select id="inputState" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Register Me</button>
+    </form>
+</div>
+
+<script src="../javascripts/registerFormValidation.js"></script>
+
+<% include ./partials/footer.ejs %>
